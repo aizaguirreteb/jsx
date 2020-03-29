@@ -17,12 +17,13 @@ function getButtonText () {
 const App = () => {
     const buttonText = 'Click Me!'
     const text = { text: 'Click Me!'}
+    const style = {backgroundColor: 'blue', color: 'white'}
 
     return (
     <div>
         <label className="label" for="name">Enter name: </label>
         <input id="name" type="text"/>
-        <button style={{backgroundColor: 'blue', color: 'white'}}>
+        <button style={style}>
             {buttonText} {text.text}
         </button>
     </div>
